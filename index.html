@@ -5,28 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Calculadora</title>
 </head>
 <body>
     <h1>Calculadora</h1>
-    <div id="visor"></div>
-    <div class="digitos">
-        <div id="n1">1</div>
-        <div id="n2">2</div>
-        <div id="n3">3</div>
-        <div id="n4">4</div>
-        <div id="n5">5</div>
-        <div id="n6">6</div>
-        <div id="n7">7</div>
-        <div id="n8">8</div>
-        <div id="n9">9</div>
-        <div id="somar">+</div>
-        <div id="subtrair">-</div>
-        <div id="multiplicar">X</div>
-        <div id="dividir">%</div>
 
+    <div class="calculadora">
+        <div class="box-resultado">
+            <p id="resultado"></p>
+        </div>
+        <hr>
+        <div class="line-1">
+            <button onclick="limpar()">C</button>
+            <button onclick="del()">Del</button>
+            <button onclick="inserir('%'), estilo()">%</button>
+            <button onclick="inserir('/')">/</button>
+        </div>
+        <div class="line-2">
+            <button onclick="inserir('7')">7</button>
+            <button onclick="inserir('8')">8</button>
+            <button onclick="inserir('9')">9</button>
+            <button onclick="inserir('*')">x</button>
+        </div>
+        <div class="line-3">
+            <button onclick="inserir('4')">4</button>
+            <button onclick="inserir('5')">5</button>
+            <button onclick="inserir('6')">6</button>
+            <button onclick="inserir('-')">-</button>
+        </div>
+        <div class="line-4">
+            <button onclick="inserir('1')">1</button>
+            <button onclick="inserir('2')">2</button>
+            <button onclick="inserir('3')">3</button>
+            <button onclick="inserir('+')">+</button>
+        </div>
+        <div class="line-5">
+            <button onclick="inserir('0')">0</button>
+            <button onclick="inserir('.')">.</button>
+            <button onclick="calcular()">=</button>
+        </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>

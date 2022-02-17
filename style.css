@@ -59,3 +59,38 @@ hr {
     background-color: rgba(128, 128, 128, 0.386);
     border-radius: 10px;
 }
+
+#calcular {
+    width: 49%;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+@media (max-width: 620px) {
+
+    .calculadora {
+        background: black;
+        width: 294px;
+        border-radius: 10px;
+    }
+
+    .box-resultado {
+        height: 50px;
+    }
+    
+    #resultado {
+        font-size: 1.1em;
+        letter-spacing: 0.8px;
+    }
+    
+    hr {
+        margin: auto;
+        border-color: white(0, 0, 0, 0.1);
+        border-width: 0.2px;
+    }
+    
+    
+    .calculadora button {
+        font-size: 1.1em;
+    }
+}

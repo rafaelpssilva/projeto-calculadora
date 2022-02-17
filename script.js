@@ -1,13 +1,10 @@
 const resultado = document.querySelector('#resultado')
 
 
-function estilo() {
-    let nume = document.querySelectorAll('.nume')
-    nume.classList.add('.red')
-}
+
 
 function inserir(num) {
-    resultado.innerHTML += num
+    resultado.innerText += num
 }
 
 function limpar() {

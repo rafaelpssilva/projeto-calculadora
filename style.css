@@ -55,7 +55,7 @@ hr {
     margin: 2px 0px;
 }
 
-.calculadora button:hover {
+.calculadora button:active {
     background-color: rgba(128, 128, 128, 0.386);
     border-radius: 10px;
 }
